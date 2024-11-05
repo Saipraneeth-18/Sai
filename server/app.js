@@ -25,7 +25,9 @@ app.use(express.json());
 
 //connect mongodb
 connectDB();
-
+app.get("/",(req,res)=>{
+  res.json("Hari Vinod's maneya....!!")
+})
 //routes
 const userRoutes = require("./routes/User");
 app.use("/user", userRoutes);
